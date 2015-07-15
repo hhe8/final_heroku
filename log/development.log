@@ -4631,3 +4631,1019 @@ Processing by PlacesController#show as HTML
   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Forbidden City' LIMIT 1[0m
   Rendered places/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:07:41 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 543ms (Views: 511.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/places/Badaling%20great%20wall" for 127.0.0.1 at 2015-07-14 19:07:43 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/edit" for 127.0.0.1 at 2015-07-14 19:07:44 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:50 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:50 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:50 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:50 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:07:55 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/place/Badaling great wall
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/places/Badaling%20great%20wall/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:10 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"Badaling great wall"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Badaling great wall' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Badaling great wall
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:08:12 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places/Temple%20of%20Heaven" for 127.0.0.1 at 2015-07-14 19:08:14 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Temple%20of%20Heaven" for 127.0.0.1 at 2015-07-14 19:08:49 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/edit" for 127.0.0.1 at 2015-07-14 19:08:50 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:52 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:53 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:08:58 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:09:28 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/places/Temple%20of%20Heaven/update?utf8=%E2%9C%93&title=Temple+of+Heaven&price=242asdf&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:10:32 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Temple of Heaven", "price"=>"242asdf", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"Temple of Heaven"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/Temple of Heaven
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/places/Temple%20of%20Heaven" for 127.0.0.1 at 2015-07-14 19:11:27 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."title" = 'Temple of Heaven' LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:11:29 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/Temple%20of%20Heaven" for 127.0.0.1 at 2015-07-14 19:13:26 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"Temple of Heaven"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div>
+    2: 
+    3:   <h2><%=@place.title %>  <%= link_to "Edit", "/places/#{@place.id}/edit" %> </h2> 
+    4:   <h4>Admission Price: <%=@place.price/100.0%> usd </h4>
+    5:   <%= image_tag @place.photourl, size: "640x400"%>
+    6:     <h4>Brief Description: <%=@place.description%></h4>
+  app/views/places/show.html.erb:3:in `_app_views_places_show_html_erb__644413608466626385_36496480'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:14:33 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:14:35 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/23" for 127.0.0.1 at 2015-07-14 19:14:37 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 23 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:14:40 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/23" for 127.0.0.1 at 2015-07-14 19:14:43 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 23 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/23/edit" for 127.0.0.1 at 2015-07-14 19:14:44 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 23 LIMIT 1
+  Rendered places/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/Forbidden%20City/update?utf8=%E2%9C%93&title=Forbidden+City&price=966d&photourl=http%3A%2F%2Fwww.wallallies.com%2Fwp-content%2Fuploads%2F2015%2F03%2FForbidden-City-Aerial-View-13-HD-Wallpaper.jpg&description=Lying+at+the+city+center+and+called+Gu+Gong+in+Chinese%2C+it+was+the+imperial+palace+for+twenty-four+emperors+during+the+Ming+and+Qing+dynasties.+It+was+first+built+throughout+14+years+during+the+reign+of+Emperor+Chengzu++in+the+Ming+Dynasty+%281368-1644%29.+Ancient+Chinese+Astronomers+believed+that+the+Purple+Star+%28Polaris%29+was+in+the+center+of+heaven+and+the+Heavenly+Emperor+lived+in+the+Purple+Palace.+The+Palace+for+the+emperor+on+earth+was+so+called+the+Purple+City.+It+was+forbidden+to+enter+without+special+permission+of+the+empeor.+Hence+its+name+The+Purple+Forbidden+City%2C+usually+The+Forbidden+City.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:14:47 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Forbidden City", "price"=>"966d", "photourl"=>"http://www.wallallies.com/wp-content/uploads/2015/03/Forbidden-City-Aerial-View-13-HD-Wallpaper.jpg", "description"=>"Lying at the city center and called Gu Gong in Chinese, it was the imperial palace for twenty-four emperors during the Ming and Qing dynasties. It was first built throughout 14 years during the reign of Emperor Chengzu  in the Ming Dynasty (1368-1644). Ancient Chinese Astronomers believed that the Purple Star (Polaris) was in the center of heaven and the Heavenly Emperor lived in the Purple Palace. The Palace for the emperor on earth was so called the Purple City. It was forbidden to enter without special permission of the empeor. Hence its name The Purple Forbidden City, usually The Forbidden City.", "commit"=>"Submit", "id"=>"Forbidden City"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `title=' for nil:NilClass):
+  app/controllers/places_controller.rb:30:in `update'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:15:15 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/25" for 127.0.0.1 at 2015-07-14 19:15:17 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/25/edit" for 127.0.0.1 at 2015-07-14 19:15:18 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  Rendered places/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/25/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725d&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:15:20 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725d", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"25"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/25
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/places/25" for 127.0.0.1 at 2015-07-14 19:15:20 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/25/edit" for 127.0.0.1 at 2015-07-14 19:15:25 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/25/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=725dadas&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:15:28 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"725dadas", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"25"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/25
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/places/25" for 127.0.0.1 at 2015-07-14 19:15:28 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/25/edit" for 127.0.0.1 at 2015-07-14 19:15:30 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  Rendered places/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/25/update?utf8=%E2%9C%93&title=Badaling+great+1212&price=725&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:15:33 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great 1212", "price"=>"725", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"25"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "places" SET "title" = ? WHERE "places"."id" = 25[0m  [["title", "Badaling great 1212"]]
+  [1m[35m (5.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/25
+Completed 302 Found in 11ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/places/25" for 127.0.0.1 at 2015-07-14 19:15:33 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/25/edit" for 127.0.0.1 at 2015-07-14 19:15:35 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  Rendered places/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:16:56 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 121ms (Views: 76.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/places/24" for 127.0.0.1 at 2015-07-14 19:16:57 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/24/edit" for 127.0.0.1 at 2015-07-14 19:16:59 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/24/update?utf8=%E2%9C%93&title=dadTemple+of+Heaven&price=242&photourl=http%3A%2F%2Fwww.beijingcentre.com%2FBeijing-Travel-Information%2FBeijing-Serviced-Apartments-Temple-of-Heaven%2FTemple2.jpg&description=The+Temple+of+Heaven+Park+is+located+in+the+Chongwen+District%2C+Beijing.+Originally%2C+this+was+the+place+where+emperors+of+the+Ming+Dynasty+%281368+-+1644%29+and+Qing+Dynasty+%281644+-+1911%29+held+the+Heaven+Worship+Ceremony.+It+is+China%27s+largest+and+most+representative+existing+masterpiece+among+China%E2%80%99s+ancient+sacrificial+buildings.+First+built+in+1420%2C+the+18th+year+of+the+reign+of+Emperor+Yongle+of+the+Ming+Dynasty+%281368+-+1644%29%2C+it+was+enlarged+and+rebuilt+during+the+reigns+of+the+Ming+emperor+Jiajing+and+the+Qing+emperor+Qianlong.+In+1988%2C+it+was+opened+to+the+public+as+a+park%2C+showing+ancient+philosophy%2C+history+and+religion.+Its+grand+architectural+style+and+profound+cultural+connotation+give+an+insight+into+the+practices+of+the+ancient+Eastern+civilization.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:17:01 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"dadTemple of Heaven", "price"=>"242", "photourl"=>"http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg", "description"=>"The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization.", "commit"=>"Submit", "id"=>"24"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "places" SET "title" = ? WHERE "places"."id" = 24  [["title", "dadTemple of Heaven"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/24
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/places/24" for 127.0.0.1 at 2015-07-14 19:17:01 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:17:03 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-07-14 19:17:04 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:20:15 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-07-14 19:20:17 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/submit_new?title=d&price=ads&photourl=ad&description=ad&commit=Submit" for 127.0.0.1 at 2015-07-14 19:20:30 -0500
+Processing by PlacesController#create as HTML
+  Parameters: {"title"=>"d", "price"=>"ads", "photourl"=>"ad", "description"=>"ad", "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)  [["description", "ad"], ["photourl", "ad"], ["price", 0], ["title", "d"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:20:30 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/27" for 127.0.0.1 at 2015-07-14 19:20:32 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 27 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/ad" for 127.0.0.1 at 2015-07-14 19:20:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/ad"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/places/d/delete" for 127.0.0.1 at 2015-07-14 19:20:37 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"d"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:12:in `delete'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/places/d/delete" for 127.0.0.1 at 2015-07-14 19:20:37 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"d"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:12:in `delete'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/places/26" for 127.0.0.1 at 2015-07-14 19:32:12 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 26 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 30.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/places/27" for 127.0.0.1 at 2015-07-14 19:32:16 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 27 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/ad" for 127.0.0.1 at 2015-07-14 19:32:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/ad"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/places/27" for 127.0.0.1 at 2015-07-14 19:32:24 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 27 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/ad" for 127.0.0.1 at 2015-07-14 19:32:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/ad"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/hhe8/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.3ms)
+
+
+Started GET "/places/Fragrant%20Hills%20Park/delete" for 127.0.0.1 at 2015-07-14 19:35:04 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Fragrant Hills Park"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:12:in `delete'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.9ms)
+
+
+Started GET "/places/Fragrant%20Hills%20Park/delete" for 127.0.0.1 at 2015-07-14 19:35:04 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"Fragrant Hills Park"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 0 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `delete' for nil:NilClass):
+  app/controllers/places_controller.rb:12:in `delete'
+
+
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hhe8/.rvm/gems/ruby-2.2.2@rails4.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:48 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/27/delete" for 127.0.0.1 at 2015-07-14 19:35:49 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"27"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 27 LIMIT 1
+  [1m[36mSQL (6.0ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 27[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:49 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/24" for 127.0.0.1 at 2015-07-14 19:35:55 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/24/delete" for 127.0.0.1 at 2015-07-14 19:35:57 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 24 LIMIT 1
+  [1m[36mSQL (6.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 24[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:57 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/23/delete" for 127.0.0.1 at 2015-07-14 19:35:58 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 23 LIMIT 1[0m
+  [1m[35mSQL (7.6ms)[0m  DELETE FROM "places" WHERE "places"."id" = 23
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:58 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/25/delete" for 127.0.0.1 at 2015-07-14 19:35:58 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 25 LIMIT 1
+  [1m[36mSQL (6.0ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 25[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:58 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/26/delete" for 127.0.0.1 at 2015-07-14 19:35:59 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 26 LIMIT 1[0m
+  [1m[35mSQL (5.9ms)[0m  DELETE FROM "places" WHERE "places"."id" = 26
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:35:59 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (4.9ms)[0m  DELETE FROM "places"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)  [["description", "Once a summer retreat for emperors, this 290-acre park is still a retreat for the crowd-weary tourist, who can relax here or stroll around ancient pavilions, mansions, temples, bridges and huge lake, stopping occasionally at a shop or tea-house."], ["photourl", "http://cache.wallpaperdownloader.com/bing/img/BeijingSummerPalace_20130801.jpg"], ["price", 483], ["title", "Summer Palace"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)[0m  [["description", "Lying at the city center and called Gu Gong in Chinese, it was the imperial palace for twenty-four emperors during the Ming and Qing dynasties. It was first built throughout 14 years during the reign of Emperor Chengzu  in the Ming Dynasty (1368-1644). Ancient Chinese Astronomers believed that the Purple Star (Polaris) was in the center of heaven and the Heavenly Emperor lived in the Purple Palace. The Palace for the emperor on earth was so called the Purple City. It was forbidden to enter without special permission of the empeor. Hence its name The Purple Forbidden City, usually The Forbidden City."], ["photourl", "http://www.wallallies.com/wp-content/uploads/2015/03/Forbidden-City-Aerial-View-13-HD-Wallpaper.jpg"], ["price", 966], ["title", "Forbidden City"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)  [["description", "The Temple of Heaven Park is located in the Chongwen District, Beijing. Originally, this was the place where emperors of the Ming Dynasty (1368 - 1644) and Qing Dynasty (1644 - 1911) held the Heaven Worship Ceremony. It is China's largest and most representative existing masterpiece among China’s ancient sacrificial buildings. First built in 1420, the 18th year of the reign of Emperor Yongle of the Ming Dynasty (1368 - 1644), it was enlarged and rebuilt during the reigns of the Ming emperor Jiajing and the Qing emperor Qianlong. In 1988, it was opened to the public as a park, showing ancient philosophy, history and religion. Its grand architectural style and profound cultural connotation give an insight into the practices of the ancient Eastern civilization."], ["photourl", "http://www.beijingcentre.com/Beijing-Travel-Information/Beijing-Serviced-Apartments-Temple-of-Heaven/Temple2.jpg"], ["price", 242], ["title", "Temple of Heaven"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)[0m  [["description", "The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World."], ["photourl", "http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg"], ["price", 725], ["title", "Badaling great wall"]]
+  [1m[35m (6.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)  [["description", "Situated in the east part of western hills, 28 kilometers (17 miles) northwest of the city, it is very large, made up of hills and forest covering 160 hectares (395.4 acres). Both its natural sceneries and cultural relics are abundant. Xianglu Peak (Incense Burner Peak), 557 meters (1827.4 feet) high, is its highest peak. It was first built in 1186 in the Jin Dynasty (1115-1234) and later extended to a large scale in the Yuan and Ming dynasties. In 1745, Emperor Qianlong (1711-1799) ordered the addition of many new halls, pavilions and gardens and gave it a new name, Jingyi Garden (Garden of Tranquility and Pleasure). Unfortunately, in 1860 and 1900 after the Summer Palace and the Yuanming Yuan (the Old Summer Palace) were set on fire, lots of relics in the Fragrant Hills were damaged by foreign troops. Since 1949, with a half-century's restoration and development by Chinese government, it has been recognized as one of the ten most famous parks in Beijing."], ["photourl", "http://www.51qilv.com/data/uploads/2012/0716/17/5003dc43808ab.jpg"], ["price", 161], ["title", "Fragrant Hills Park"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:24 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.9ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 140ms (Views: 100.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/places/31" for 127.0.0.1 at 2015-07-14 19:39:29 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 31 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/31/edit" for 127.0.0.1 at 2015-07-14 19:39:31 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 31 LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/31/update?utf8=%E2%9C%93&title=Badaling+great+wall&price=721212&photourl=http%3A%2F%2Fwww.paulnoll.com%2FChina%2FTourism%2FGreat-Wall-Badaling-2.jpg&description=The+Great+Wall+is+a+symbol+of+Chinese+civilization%2C+and+one+of+the+wonders+that+the+Chinese+people+have+created.+Badaling+Great+Wall%2C+the+most+representative+part%2C+was+promoted+as+a+key+national+cultural+relic%2C+protected+under+the+approval+of+the+State+Council+in+1961.+In+1988%2C+it+was+enlisted+in+the+World+Cultural+Heritage+Directory+by+UNESCO.+On+July+7%2C+2007%2C+it+gained+the+worldwide+reputation+once+again%3A+it+was+listed+among+the+New+Seven+Wonders+of+the+World.&commit=Submit" for 127.0.0.1 at 2015-07-14 19:39:36 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Badaling great wall", "price"=>"721212", "photourl"=>"http://www.paulnoll.com/China/Tourism/Great-Wall-Badaling-2.jpg", "description"=>"The Great Wall is a symbol of Chinese civilization, and one of the wonders that the Chinese people have created. Badaling Great Wall, the most representative part, was promoted as a key national cultural relic, protected under the approval of the State Council in 1961. In 1988, it was enlisted in the World Cultural Heritage Directory by UNESCO. On July 7, 2007, it gained the worldwide reputation once again: it was listed among the New Seven Wonders of the World.", "commit"=>"Submit", "id"=>"31"}
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 31 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "places" SET "price" = ? WHERE "places"."id" = 31  [["price", 721212]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/31
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/places/31" for 127.0.0.1 at 2015-07-14 19:39:36 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 31 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/31/edit" for 127.0.0.1 at 2015-07-14 19:39:38 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 31 LIMIT 1[0m
+  Rendered places/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:38 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/29/delete" for 127.0.0.1 at 2015-07-14 19:39:43 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 29 LIMIT 1[0m
+  [1m[35mSQL (5.4ms)[0m  DELETE FROM "places" WHERE "places"."id" = 29
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:43 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places/28/delete" for 127.0.0.1 at 2015-07-14 19:39:44 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 28 LIMIT 1
+  [1m[36mSQL (5.4ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 28[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:44 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-07-14 19:39:45 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/submit_new?title=12&price=12&photourl=12&description=12&commit=Submit" for 127.0.0.1 at 2015-07-14 19:39:49 -0500
+Processing by PlacesController#create as HTML
+  Parameters: {"title"=>"12", "price"=>"12", "photourl"=>"12", "description"=>"12", "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("description", "photourl", "price", "title") VALUES (?, ?, ?, ?)  [["description", "12"], ["photourl", "12"], ["price", 12], ["title", "12"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:49 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/33/delete" for 127.0.0.1 at 2015-07-14 19:39:51 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 33 LIMIT 1[0m
+  [1m[35mSQL (5.7ms)[0m  DELETE FROM "places" WHERE "places"."id" = 33
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:51 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places/32/delete" for 127.0.0.1 at 2015-07-14 19:39:52 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 32 LIMIT 1
+  [1m[36mSQL (5.1ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = 32[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 19:39:52 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.3ms)

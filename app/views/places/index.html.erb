@@ -5,7 +5,7 @@
     <% @places.each do |place| %>
       <li>
         <p>
-          <%= link_to place.title, "/places/#{place.title}" , width: "100" %>  &nbsp;  <%= link_to "Delete", "/places/#{place.title}/delete"%>
+          <%= link_to place.title, "/places/#{place.id}" , width: "100" %>  &nbsp;  <%= link_to "Delete", "/places/#{place.id}/delete"%>
         </p>
       </li>
     <% end %>

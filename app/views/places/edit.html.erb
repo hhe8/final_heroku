@@ -1,5 +1,5 @@
 <h2> Edit <%= @place.title %> </h2>
-<%=form_tag "/places/#{@place.title}/update" , method: "get"%>
+<%=form_tag "/places/#{@place.id}/update" , method: "get"%>
     <p>Title: <%= text_field_tag 'title' , @place.title , required: true , autofocus: true %> </p>
     <p>Admission Price: <%= text_field_tag 'price' , @place.price , required: true %> </p>
     <p>Photo Url:  <%= text_field_tag 'photourl' , @place.photourl , required: true %> </p>
