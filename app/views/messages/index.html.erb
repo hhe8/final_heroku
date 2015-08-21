@@ -1,0 +1,20 @@
+<h2>Messages</h2>
+<ul>
+  <%if @user.message_receiveds%>
+    <%@user.message_receiveds.each do |message|%>
+      <li><%=link_to User.find_by(id: message.sender_id).name,"/profile/#{message.sender_id}" %>
+      said <%=message.content%></li>
+      <%=link_to "reply", new_message_path(id: message.sender_id)%>
+    <% end %>
+  <% end %>
+</ul>
+
+<h2>Sent</h2>
+<ul>
+  <%if @user.message_sents%>
+    <%@user.message_sents.each do |message|%>
+      <li> To <%=link_to User.find_by(id: message.receiver_id).name,"/profile/#{message.sender_id}"%>: <%= message.content %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

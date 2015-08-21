@@ -13,11 +13,42 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
-  create_table "places", force: true do |t|
-    t.string  "title"
-    t.string  "photourl"
-    t.text    "description"
-    t.integer "price"
+  create_table "follows", force: true do |t|
+    t.integer "follower_id"
+    t.integer "followee_id"
+  end
+
+  add_index "follows", ["followee_id"], name: "index_follows_on_followee_id"
+  add_index "follows", ["follower_id"], name: "index_follows_on_follower_id"
+
+  create_table "messages", force: true do |t|
+    t.text    "content"
+    t.integer "sender_id"
+    t.integer "receiver_id"
+  end
+
+  add_index "messages", ["receiver_id"], name: "index_messages_on_receiver_id"
+  add_index "messages", ["sender_id"], name: "index_messages_on_sender_id"
+
+  create_table "searches", force: true do |t|
+    t.string  "sex"
+    t.integer "age"
+    t.string  "region"
+    t.string  "name"
+    t.integer "searcher_id"
+  end
+
+  add_index "searches", ["searcher_id"], name: "index_searches_on_searcher_id"
+
+  create_table "users", force: true do |t|
+    t.string  "name"
+    t.string  "email"
+    t.string  "password_digest"
+    t.boolean "admin",           default: false
+    t.string  "sex"
+    t.integer "age"
+    t.string  "region"
+    t.string  "status"
   end
 
 end

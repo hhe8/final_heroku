@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h1>Send message to <%=@destination.name%></h1>
+</div>
+
+
+
+<%= form_tag messages_path do %>
+  <p>
+    <%= label_tag :content %>
+    <%= text_field_tag :content, nil, class: 'input-large' %>
+    <%= hidden_field_tag :receiver_id, @destination.id%>
+  </p>
+  <%= submit_tag "Send Message" %>
+<% end %>

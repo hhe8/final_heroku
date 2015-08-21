@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Beijing</title>
-  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" %>
+  <title>Meet People</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js' %>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" %>
   <%= csrf_meta_tags %>
-
-  <style>
-    h1 {
-      border-bottom: solid 3px gray;
-      margin-bottom: 24px;
-    }
-  </style>
-
 </head>
+
 <body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Meet People</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/users">People</a></li>
+          <% if session[:user_id] %>
+            <li><a href="/follows">Follow</a></li>
+            <li><a href="/messages">Message</a></li>
+            <li><a href="/searchs">Search</a></li>          
+          <% end %>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <% if !session[:user_id]%>
+          <li><a href="/users/new">Sign Up</a></li>
+          <li><a href="/sessions/new">Sign In</a></li>
+          <% end %>
+
+          <% if session[:user_id]%>
+          <li><a href="/account"><%= User.find_by(id: session[:user_id]).name%>'s Account</a></li>
+          <li><a href="/logout">Sign Out</a></li>
+          <%end%>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container">
 
-    <h1><%= link_to "Beijing", "/" %></h1>
-
-    <% if notice.present? %>
-      <div class="alert alert-info"%>
-        <%= notice %>
+    <% if flash[:notice].present? %>
+      <div class="alert alert-info">
+        <%= flash[:notice] %>
       </div>
     <% end %>
 

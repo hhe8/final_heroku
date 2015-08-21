@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>Search</h1>
+</div>
+
+<%= form_tag searchs_path do %>
+  <p>
+    <%= label_tag :name %>
+    <%= text_field_tag @search.name %>
+  </p>
+
+  <p>
+    <%= label_tag :age %>
+    <%= text_field_tag @search.age %>
+  </p>
+
+  <p>
+    <%= label_tag :sex %>
+    <%= select_tag :sex, options_for_select([ "male", "female" ], @search.sex) %>
+ </p>
+
+   <p>
+     <%= label_tag :region %>
+     <%= select_tag :region, options_for_select([ "California", "Illinois", "New York" ], @search.region) %>
+  </p>
+
+  <%= submit_tag "Search" %>
+
+<% end %>

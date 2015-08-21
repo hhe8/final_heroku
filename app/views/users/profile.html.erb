@@ -1,0 +1,38 @@
+<div class="page-header">
+  <h1><%=@user.name%>'s profile</h1>
+</div>
+
+<% link_to "Message #{@user.name}", new_message_path(id: @user.id)%>
+
+<p>
+  <strong>Name:</strong> <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email address on file:</strong> <%= @user.email %>
+</p>
+
+<p>
+  <strong>Age:</strong> <%= @user.age %>
+</p>
+
+<p>
+  <strong>Sex:</strong> <%= @user.sex %>
+</p>
+
+<p>
+  <strong>region:</strong> <%= @user.region %>
+</p>
+
+<p>
+  <strong>status:</strong> <%= @user.status %>
+</p>
+
+<!-- <p>Leave a message for <%=@user.name%></p>
+<%= form_tag "/messages/#{@user.id}", method: "patch" do%>
+  <p>
+    <%= label_tag :content %>
+    <%= text_field_tag :content%>
+  </p>
+  <%= submit_tag "Submit" %>
+<% end %> -->

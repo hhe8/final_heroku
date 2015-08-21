@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
+  root 'users#index'
 
-  # Put your routes here
-  root 'places#index'
-  get '/places' => 'places#index'
-  get '/places/submit_new' => 'places#create'
-  get '/places/new' => 'places#new'
-  get '/places/:id' => 'places#show'
-  get '/places/:id/delete' => 'places#delete'
-  get '/places/:id/edit' => 'places#edit'
-  get '/places/:id/update' => 'places#update'
+  get '/sessions/new' => 'sessions#new'
+  post '/sessions' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+  get '/account' => 'users#show'
+
+  # profile for user
+  get '/profile/:id' => 'users#profile'
+
+  resources :follows
+  resources :users
+  resources :sessions
+  resources :messages
+  resources :searchs
 end

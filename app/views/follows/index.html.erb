@@ -1,0 +1,34 @@
+<h2>Following</h2>
+<ul>
+  <%if @user.followers%>
+    <%@user.followers.each do |follower|%>
+      <li><%=link_to follower.name,"/profile/#{follower.id}" %>
+          <%=link_to "(unfollow)", follow_path(follower.id), method: "delete"%>
+          <%=link_to "send message", new_message_path(id: follower.id)%>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<h2>Followed by</h2>
+<ul>
+  <%if @user.followees%>
+    <%@user.followees.each do |followee|%>
+      <li><%=link_to followee.name, "/profile/#{followee.id}"%>
+          <!-- <%=link_to "(delete followee)", follow_path(followee.id), method: "delete"%> -->
+      </li>
+
+    <% end %>
+  <%end%>
+</ul>
+
+<h2>What people say...</h2>
+<ul>
+  <%if @user.followers%>
+    <%@user.followers.each do |follower|%>
+      <li><%=link_to follower.name,"/profile/#{follower.id}" %>
+        <p><%= follower.status %></p>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
