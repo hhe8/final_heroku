@@ -3,18 +3,13 @@ development:
   encoding: UTF-8
   database: final_heroku_development
   pool: 5
-  username:
-  password:
+  username: ericm
+  password: password1
 
 test:
   adapter: postgresql
   encoding: UTF-8
   database: final_heroku_test
   pool: 5
-  username:
-  password:
-
-production:
-  adapter: postgresql
-  encoding: UTF-8
-  database: final_heroku_production
+  username: ericm
+  password: password1

@@ -13,32 +13,35 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "follows", force: true do |t|
     t.integer "follower_id"
     t.integer "followee_id"
   end
 
-  add_index "follows", ["followee_id"], name: "index_follows_on_followee_id"
-  add_index "follows", ["follower_id"], name: "index_follows_on_follower_id"
+  add_index "follows", ["followee_id"], name: "index_follows_on_followee_id", using: :btree
+  add_index "follows", ["follower_id"], name: "index_follows_on_follower_id", using: :btree
 
   create_table "messages", force: true do |t|
     t.text    "content"
-    t.integer "sender_id"
     t.integer "receiver_id"
+    t.integer "sender_id"
   end
 
-  add_index "messages", ["receiver_id"], name: "index_messages_on_receiver_id"
-  add_index "messages", ["sender_id"], name: "index_messages_on_sender_id"
+  add_index "messages", ["receiver_id"], name: "index_messages_on_receiver_id", using: :btree
+  add_index "messages", ["sender_id"], name: "index_messages_on_sender_id", using: :btree
 
   create_table "searches", force: true do |t|
+    t.integer "searcher_id"
     t.string  "sex"
     t.integer "age"
     t.string  "region"
     t.string  "name"
-    t.integer "searcher_id"
   end
 
-  add_index "searches", ["searcher_id"], name: "index_searches_on_searcher_id"
+  add_index "searches", ["searcher_id"], name: "index_searches_on_searcher_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string  "name"
