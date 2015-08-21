@@ -1,8 +1,0 @@
-<h2> Enter information for a new place </h2>
-<form action = "/places/submit_new">
-    <p>Title: <%= text_field_tag 'title' ,nil, required: true , autofocus: true %> </p>
-    <p>Admission Price: <%= text_field_tag 'price' ,nil, required: true %> </p>
-    <p>Photo Url:  <%= text_field_tag 'photourl' ,nil, required: true %> </p>
-    <p>Description: <%= text_field_tag 'description' ,nil, required: true %> </p>
-    <p> <%= submit_tag "Submit" %> </p>
-</form>

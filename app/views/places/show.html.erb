@@ -1,7 +1,0 @@
-<div>
-
-  <h2><%=@place.title %>  <%= link_to "Edit", "/places/#{@place.id}/edit" %> </h2> 
-  <h4>Admission Price: <%=@place.price/100.0%> usd </h4>
-  <%= image_tag @place.photourl, size: "640x400"%>
-    <h4>Brief Description: <%=@place.description%></h4>
-</div>
