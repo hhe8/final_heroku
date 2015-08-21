@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: UTF-8
-  database: myapp_development
+  database: final_heroku_development
   pool: 5
   username:
   password:
@@ -9,7 +9,12 @@ development:
 test:
   adapter: postgresql
   encoding: UTF-8
-  database: myapp_test
+  database: final_heroku_test
   pool: 5
   username:
-  password: 
+  password:
+
+production:
+  adapter: postgresql
+  encoding: UTF-8
+  database: final_heroku_production
